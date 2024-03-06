@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "Halyard Display";
+  src: url("./fonts/c4d8819fda4c3fd79e36cedcc8d422bb.eot"); /* IE9*/
+  src: url("./fonts/c4d8819fda4c3fd79e36cedcc8d422bb.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("./fonts/c4d8819fda4c3fd79e36cedcc8d422bb.woff2")
+      format("woff2"),
+    /* chrome、firefox */ url("./fonts/c4d8819fda4c3fd79e36cedcc8d422bb.woff")
+      format("woff"),
+    /* chrome、firefox */ url("./fonts/c4d8819fda4c3fd79e36cedcc8d422bb.ttf")
+      format("truetype"),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+      url("./fonts/c4d8819fda4c3fd79e36cedcc8d422bb.svg#Halyard Display")
+      format("svg"); /* iOS 4.1- */
+}
+
+$logoFamily: "Halyard Display";
+$titleFmaily: "Halyard Display";
+$subTitleFmaily: "Halyard Display";
+$txtFamily: "Halyard Display";
+$logoTxt: "Cinzel";
+$n3logoTxt: "Rubik";
+
+// Size
+$tiny: 10px;
+$small: 11px;
+$medium: 13px;
+$large: 14px;
+$xlarge: 16px;
+$xxlarge: 18px;
+$xxxlarge: 60px;
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: $txt;
+  font-weight: 500;
+}
+
+.logo-font {
+  font-family: $logoFamily, cursive;
+  letter-spacing: 10px;
+  font-size: 24px;
+}
+
+.at-font {
+  // font-family: "Comfortaa"; // Inter;
+}
+
+.os-font {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+h1 {
+  font-family: $titleFmaily;
+  letter-spacing: 3px !important;
+}
+
+h2 {
+  font-family: $subTitleFmaily;
+}
+
+h4 {
+  font-family: $subTitleFmaily;
+  letter-spacing: 3px;
+}
+
+p,
+li,
+a,
+pre {
+  font-family: $txtFamily;
+  letter-spacing: 0.5px;
+  color: black;
+  font-weight: 900;
+}
+
+.form-text {
+  color: grey;
+}
+
+.logo-txt {
+  font-family: $logoTxt;
+}
+
+.n3-txt {
+  font-family: $n3logoTxt;
+}

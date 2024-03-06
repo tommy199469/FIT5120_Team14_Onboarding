@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  h1 {
+    font-size: 40px;
+    color: $txt;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 15px;
+    color: $txt;
+    font-family: $subHeaderFamily;
+    font-weight: 400;
+  }
+  .line {
+    width: 88px;
+    height: 1px;
+    display: block;
+    background-color: $txt;
+    margin: 0 auto;
+    margin-top: $s;
+  }
+}
