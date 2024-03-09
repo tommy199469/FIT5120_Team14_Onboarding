@@ -98,7 +98,7 @@ const TempBar = ({ temp }: any) => {
     tempRanges[2];
 
   return (
-    <div className="max-w-xs mx-auto">
+    <div className="max-w-xs mx-auto mt-5 md:mt-0">
       <div className="text-sm font-medium text-gray-700 mb-1">
         Temp: {temp}°C
       </div>
@@ -118,12 +118,10 @@ const UVIndexBar = ({ currentUVI, temp }: any) => {
     return (kelvin - 273.15).toFixed(2); // Rounds to two decimal places
   };
 
-  console.log(currentUVI, convertKelvinToCelsius(temp));
-
   if (temp === 0) return <div />;
 
   return (
-    <div className="flex flex-row justify-center items-center">
+    <div className="flex flex-col md:flex-row justify-center items-center">
       <UV currentUVI={currentUVI} />
       <TempBar temp={convertKelvinToCelsius(temp)} />
     </div>

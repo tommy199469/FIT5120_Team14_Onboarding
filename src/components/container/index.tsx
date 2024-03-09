@@ -8,6 +8,12 @@ export const Container = (props: any) => {
 
   const { history } = useRouterStore();
 
+  const scroll = (elementId: string) => {
+    const section = document.querySelector("#" + elementId);
+
+    if (section) section.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   const getPageBg = (from: string) => {
     return (
       <div
@@ -15,25 +21,30 @@ export const Container = (props: any) => {
          mx-auto p-[20px] flex flex-row items-center`}
       >
         <h3
-          onClick={() => history.push("/")}
+          onClick={() => scroll("home")}
           className="text-white cursor-pointer"
         >
-          UV System
+          Smart UV
         </h3>
-        <div className="flex-1" />
-        <p
-          onClick={() => history.push("/subscribe")}
-          className="text-white border-2 border-white p-2 rounded-md cursor-pointer 
-        hover:bg-[#012F4F] hover:text-white hover:border-[#012F4F] text-[16px] shadow-md"
+
+        <h3
+          onClick={() => scroll("map")}
+          className="text-white cursor-pointer ml-10"
         >
-          {"Subscribe".toUpperCase()}
-        </p>
+          UV Index Map
+        </h3>
+        <h3
+          onClick={() => scroll("subscribe")}
+          className="text-white cursor-pointer ml-5 "
+        >
+          Subscribe
+        </h3>
       </div>
     );
   };
 
   return (
-    <div className={`min-h-screen min-w-screen bg-white`}>
+    <div className={`min-h-screen min-w-screen bg-white overflow-y-auto`}>
       {videoScreenHeader.indexOf(from) < 0 && getPageBg(from)}
 
       {/* Children */}

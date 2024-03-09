@@ -1,0 +1,12 @@
+.awssld__content {
+  height: 400px;
+  overflow-y: auto;
+}
+
+.awssld__next {
+  margin-right: 10px;
+}
+
+.awssld__prev {
+  margin-left: 10px;
+}

@@ -44,9 +44,9 @@ export const Subscribe = (props: any) => {
   };
 
   return (
-    <Container>
-      <div className="flex flex-col items-center h-[100%]">
-        <div className="mt-52">
+    <>
+      <div className="flex flex-col items-center h-[100%] mb-10">
+        <div className="mt-5">
           <p className="text-[14px] text-center">
             Please enter your email to subscribe to our Sunscreen Refill
             Reminder Service.
@@ -96,6 +96,6 @@ export const Subscribe = (props: any) => {
         )}
       </div>
       <ToastContainer />
-    </Container>
+    </>
   );
 };
